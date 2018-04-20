@@ -15,6 +15,7 @@ public class UserDaoImpl implements UserDao {
 	public UserDaoImpl() {
 		try {
 			con=DBUtil.connect();
+			System.out.println("connection");
 		} catch (ConnectionNotSetUpException e) {
 			
 			e.printStackTrace();
